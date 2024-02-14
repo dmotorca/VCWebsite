@@ -1,0 +1,25 @@
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.screen {
+  height: 100vh;
+  position: relative;
+  z-index: 1; /* Ensure all screens are initially visible */
+  top: 0; /* Start each screen at the top of the viewport */
+  transition: z-index 0.5s; /* Add a smooth transition effect */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+img {
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  object-fit: cover; /* Ensure the image covers the entire viewport */
+}
