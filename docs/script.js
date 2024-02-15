@@ -36,3 +36,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', updateScreens);
 });
+
+//Rotating Images Event
+document.addEventListener('DOMContentLoaded', function () {
+  const images = [
+    '../images/img1_black_suit.jpg',
+    '../images/img2_black_suit.jpg',
+    '../images/img3_brown_suit.jpg',
+  ];
+
+  let currentIndex = 0; // Declaring currentIndex
+  const imageElement = document.getElementById('image1');
+
+  function changeImage() {
+    imageElement.src = images[currentIndex]; // accessing the images array
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Calling changeImage initially
+  changeImage();
+
+  // Set up interval to change image every 1.5 seconds
+  setInterval(changeImage, 1500);
+});

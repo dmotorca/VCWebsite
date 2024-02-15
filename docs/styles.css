@@ -14,6 +14,17 @@ body {
   align-items: center; /* Center the content vertically */
 }
 
+.screen1 {
+  background: red;
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.screen1 img {
+  height: 850px; /* Set a fixed height for each image */
+  width: 550px; /* Set a fixed width for each image */
+  object-fit: cover; /* Ensure the image covers the entire space */
+}
 .sticky {
   position: sticky;
   top: 0;
@@ -22,4 +33,42 @@ img {
   width: 100vw; /* Set the width to 100% of the viewport width */
   height: 100vh; /* Set the height to 100% of the viewport height */
   object-fit: cover; /* Ensure the image covers the entire viewport */
+}
+
+.navbar {
+  position: fixed; /* Make the navbar sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 999; /* Ensure navbar is above other content */
+}
+
+.navbar-item {
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.left {
+  /* Align to the top left */
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.middle {
+  /* Center horizontally */
+  margin: 0 auto;
+}
+
+.right {
+  /* Align to the top right */
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
