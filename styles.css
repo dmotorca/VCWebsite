@@ -33,6 +33,28 @@ body {
 .screen3 {
   background: #000;
 }
+.screen1 img {
+  height: 60vh; /* Set a percentage height for each image */
+  width: auto; /* Allow the width to adjust based on the height */
+}
+
+.screen3 img {
+  height: 80vh; /* Set a percentage height for each image */
+  width: auto; /* Allow the width to adjust based on the height */
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .screen1 img {
+    height: 900px; /* Set a fixed height for each image on desktop */
+    width: auto; /* Allow the width to adjust based on the height */
+  }
+
+  .screen3 img {
+    height: 900px; /* Set a fixed height for each image on desktop */
+    width: auto; /* Allow the width to adjust based on the height */
+  }
+}
 
 .sticky {
   position: sticky;
