@@ -46,16 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   let currentIndex = 0; // Declaring currentIndex
-  const imageElement = document.getElementById('image1');
+  const imageElement = document.getElementById('image1'); //Grabbing by ID and changing image1
 
   function changeImage() {
     imageElement.src = images[currentIndex]; // accessing the images array
-    currentIndex = (currentIndex + 1) % images.length;
+    currentIndex = (currentIndex + 1) % images.length; //Counting + choosing the correct image
   }
 
   // Calling changeImage initially
   changeImage();
 
-  // Set up interval to change image every 1.5 seconds
-  setInterval(changeImage, 1500);
+  // Set up interval to change image every 1.2 seconds
+  setInterval(changeImage, 1200);
 });

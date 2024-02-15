@@ -50,6 +50,8 @@ body {
     width: auto; /* Allow the width to adjust based on the height */
   }
 
+  .screen2 img {
+  }
   .screen3 img {
     height: 900px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
@@ -59,6 +61,11 @@ body {
 .sticky {
   position: sticky;
   top: 0;
+}
+video {
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  object-fit: cover; /* Ensure the image covers the entire viewport */
 }
 img {
   width: 100vw; /* Set the width to 100% of the viewport width */
@@ -84,7 +91,13 @@ img {
   font-weight: 700;
   font-size: 18px; /* Adjust font size as needed */
 }
-
+.navbar-item a {
+  color: black;
+  font-weight: 700;
+  font-size: 16px; /* Adjust font size as needed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none; /* Remove underline */
+}
 .left {
   /* Align to the top left */
   position: absolute;
