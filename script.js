@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //Rotating Images Event
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    '/docs/images/img1_black_suit.jpg',
-    '/docs/images/img2_black_suit.jpg',
-    '/docs/images/img3_brown_suit.jpg',
+    '../images/img1_black_suit.jpg',
+    '../images/img2_black_suit.jpg',
+    '../images/img3_brown_suit.jpg',
   ];
 
   let currentIndex = 0; // Declaring currentIndex
