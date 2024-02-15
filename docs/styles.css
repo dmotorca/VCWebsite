@@ -25,6 +25,15 @@ body {
   width: 550px; /* Set a fixed width for each image */
   object-fit: cover; /* Ensure the image covers the entire space */
 }
+.screen3 img {
+  height: 1200px; /* Set a fixed height for each image */
+  width: 950px;
+  object-fit: cover; /* Ensure the image covers the container */ /* Set a fixed width for each image */
+}
+.screen3 {
+  background: #000;
+}
+
 .sticky {
   position: sticky;
   top: 0;
