@@ -15,46 +15,58 @@ body {
 }
 
 .screen1 {
-  background: red;
+  background: #3050b0;
   display: flex; /* Use flexbox to center the image */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
 .screen1 img {
-  height: 850px; /* Set a fixed height for each image */
-  width: 550px; /* Set a fixed width for each image */
+  height: 450px; /* Set a fixed height for each image */
+  width: 300px; /* Set a fixed width for each image */
   object-fit: cover; /* Ensure the image covers the entire space */
-}
-.screen3 img {
-  height: 1200px; /* Set a fixed height for each image */
-  width: 950px;
-  object-fit: cover; /* Ensure the image covers the container */ /* Set a fixed width for each image */
 }
 .screen3 {
   background: #000;
+  height: auto;
+  width: auto;
 }
-.screen1 img {
-  height: 50vh; /* Set a percentage height for each image */
+.screen2 img {
+  height: 100vh; /* Set a percentage height for each image */
   width: auto; /* Allow the width to adjust based on the height */
+}
+.screen3 img {
+  height: 100vh; /* Set a percentage height for each image */
+  width: auto; /* Allow the width to adjust based on the height */
+}
+.screen4 {
+  background: #000;
+}
+.screen4 img {
+  height: 35vh;
+  width: 40vw;
+  margin: 5px;
 }
 
-.screen3 img {
-  height: 50vh; /* Set a percentage height for each image */
-  width: auto; /* Allow the width to adjust based on the height */
+.screen5 {
+  background: #000;
+}
+.screen5 img {
+  height: auto;
+  width: 100vw;
 }
 
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   .screen1 img {
-    height: 900px; /* Set a fixed height for each image on desktop */
+    height: 1100px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
   }
 
   .screen2 img {
+    height: 100vh;
   }
   .screen3 img {
-    height: 900px; /* Set a fixed height for each image on desktop */
-    width: auto; /* Allow the width to adjust based on the height */
+    height: 100vh; /* Set a fixed height for each image on desktop */
   }
 }
 
@@ -62,11 +74,7 @@ body {
   position: sticky;
   top: 0;
 }
-video {
-  width: 100vw; /* Set the width to 100% of the viewport width */
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  object-fit: cover; /* Ensure the image covers the entire viewport */
-}
+
 img {
   width: 100vw; /* Set the width to 100% of the viewport width */
   height: 100vh; /* Set the height to 100% of the viewport height */

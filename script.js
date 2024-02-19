@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //Rotating Images Event
 document.addEventListener('DOMContentLoaded', function () {
   const images = [
-    './images/img1_black_suit.jpg',
-    './images/img2_black_suit.jpg',
-    './images/img3_brown_suit.jpg',
+    './images/rotating_1.png',
+    './images/rotating_2.png',
+    './images/rotating_3.png',
   ];
 
   let currentIndex = 0; // Declaring currentIndex
@@ -56,6 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Calling changeImage initially
   changeImage();
 
-  // Set up interval to change image every 1.2 seconds
-  setInterval(changeImage, 1200);
+  // Set up interval to change image every 1.5 seconds
+  setInterval(changeImage, 1500);
 });
