@@ -144,16 +144,14 @@ img {
   z-index: 999; /* Ensure navbar is above other content */
 }
 
-.navbar-item {
-  color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 700;
-  font-size: 18px; /* Adjust font size as needed */
+#logo {
+  height: 4vh;
+  width: auto;
 }
 .navbar-item a {
-  color: black;
-  font-weight: 700;
-  font-size: 16px; /* Adjust font size as needed */
+  color: white;
+  font-weight: 500;
+  font-size: 10px; /* Adjust font size as needed */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none; /* Remove underline */
 }
@@ -166,6 +164,7 @@ img {
 
 .middle {
   /* Center horizontally */
+
   margin: 0 auto;
 }
 

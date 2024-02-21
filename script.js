@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     imageElement_3.src = images_3[currentIndex_3]; // accessing the images array
     currentIndex_3 = (currentIndex_3 + 1) % images_3.length; //Counting + choosing the correct image
   }
-  function changeImage_3() {
+  function changeImage_4() {
     imageElement_4.src = images_4[currentIndex_4]; // accessing the images array
     currentIndex_4 = (currentIndex_4 + 1) % images_4.length; //Counting + choosing the correct image
   }
@@ -100,8 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
   changeImage_1();
   changeImage_2();
   changeImage_3();
+  changeImage_4();
   // Set up interval to change image every 1.5 seconds
   setInterval(changeImage_1, 1500);
   setInterval(changeImage_2, 1500);
   setInterval(changeImage_3, 1500);
+  setInterval(changeImage_4, 1500);
 });
