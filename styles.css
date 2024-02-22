@@ -1,6 +1,7 @@
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  background: #3050b0;
 }
 
 .screen {
@@ -109,6 +110,7 @@ body {
     height: 1100px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
   }
+
   .screen8 img {
     height: 1100px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
@@ -173,4 +175,37 @@ img {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+#about_html {
+  color: #000;
+}
+
+.contact_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_p {
+  font-size: x-large;
+  padding-top: 300px;
+  max-width: 1500px;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
+}
+
+.about_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_p {
+  font-size: x-large;
+  padding-top: 300px;
+  max-width: 1500px;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
 }
