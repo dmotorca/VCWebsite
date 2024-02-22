@@ -100,26 +100,76 @@ body {
   background: white;
 }
 .screen15 img {
-  height: 80vh;
+  /* REVIEW THIS ONE*/
+  height: 75vh;
   width: 95vw;
 }
 
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
-  .screen1 img {
-    height: 1100px; /* Set a fixed height for each image on desktop */
+  .screen1 img,
+  .screen8 img,
+  .screen12 img {
+    height: 1000px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
   }
 
-  .screen8 img {
-    height: 1100px; /* Set a fixed height for each image on desktop */
-    width: auto; /* Allow the width to adjust based on the height */
-  }
   .screen2 img {
-    height: 100vh;
+    /*Needs to be changed ** Octavia Img Long */
+    height: 50vh;
+    width: 50vw;
   }
+
   .screen3 img {
     height: 100vh; /* Set a fixed height for each image on desktop */
+  }
+
+  .screen4 img,
+  .screen7 img,
+  .screen16 img {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 75vh;
+  }
+
+  .screen10 img {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 75vh;
+    width: 30vw;
+  }
+
+  .screen11 img {
+    /*Needs to be changed ** Octavia Img Long */
+    height: 80vh;
+    width: 61vw;
+  }
+
+  .screen13 img {
+    height: 80vh;
+    width: 34.55vw;
+  }
+
+  .screen14 img {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 90vh;
+    width: 30vw;
+  }
+
+  .screen15 img {
+    height: 80vh;
+    width: auto;
+  }
+
+  .screen17 img {
+    height: auto;
+    width: auto;
+  }
+
+  .screen18 img {
+    height: auto;
+    width: auto;
   }
 }
 
