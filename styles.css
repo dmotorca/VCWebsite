@@ -70,7 +70,7 @@ body {
   width: auto;
 }
 
-/* Combine same height screens */ 
+/* Combine same height screens */
 .screen2,
 .screen3,
 .screen6,
@@ -158,7 +158,7 @@ img {
   top: 20px;
 }
 
-/* combine .contact_body and .about_body */ 
+/* combine .contact_body and .about_body */
 .about_body,
 .contact_body {
   display: flex;
@@ -181,14 +181,15 @@ img {
   .screen1 img,
   .screen8 img,
   .screen12 img {
-    height: 1000px; /* Set a fixed height for each image on desktop */
+    height: 600px; /* Set a fixed height for each image on desktop */
     width: auto; /* Allow the width to adjust based on the height */
   }
 
   .screen2 img {
     /*Needs to be changed ** Octavia Img Long */
-    height: 50vh;
-    width: 50vw;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .screen3 img {
@@ -235,11 +236,9 @@ img {
 
   .screen17 img {
     height: auto;
-    width: auto;
   }
 
   .screen18 img {
     height: auto;
-    width: auto;
   }
 }
