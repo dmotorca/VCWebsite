@@ -1,0 +1,98 @@
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background: #3050b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the body full height of the viewport */
+}
+
+.left {
+  /* Align to the top left */
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.middle {
+  /* Center horizontally */
+  margin: 0 auto;
+}
+
+.right {
+  /* Align to the top right */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  position: fixed; /* Make the navbar sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 999; /* Ensure navbar is above other content */
+}
+
+#logo {
+  height: 4vh;
+  width: auto;
+}
+
+.navbar-item a {
+  color: black;
+  font-weight: 500;
+  font-size: 10px; /* Adjust font size as needed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none; /* Remove underline */
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_form form {
+  width: 100%;
+}
+
+.contact_form label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact_form input[type='email'],
+.contact_form input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#box {
+  background-color: gray;
+}
+.contact_form input[type='submit'] {
+  background: #3050b0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact_form input[type='submit']:hover {
+  background: #21409c;
+}
