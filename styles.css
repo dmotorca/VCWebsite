@@ -158,22 +158,105 @@ img {
   top: 20px;
 }
 
+/********** Contact and about **********/
 /* combine .contact_body and .about_body */
-.about_body,
-.contact_body {
+.about_body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about_p,
-.contact_p {
+
+.about_p {
   font-size: x-large;
   padding-top: 300px;
   max-width: 1500px;
   word-wrap: break-word;
   text-align: center;
   color: white;
+}
+
+
+/********** Focus solely on the contact **********/
+/* Centering the form container */
+.contact_body {
+  box-sizing: border-box;
+  font-family: 'Outfit';
+  background: linear-gradient(#3050b0, white)
+}
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px; 
+}
+
+.contact-left-title h2 {
+  font-weight: 600; 
+  color: white; 
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none; 
+  width: 120px; 
+  height: 5px; 
+  background-color: white; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px; 
+  height: 50px; 
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500px;
+  color: #3050b0;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px; 
+  padding-top: 15px;
+  border-radius: 25px;
+}
+
+.contact-input:focus {
+  border: 2px solid black; 
+}
+
+.contact-input::placeholder {
+  color: #3050b0;
+
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px; 
+  font-size: 15px;
+  color: white; 
+  gap: 10px;
+  border: none; 
+  border-radius: 50px;
+  background: linear-gradient(200deg, white, #3050b0 );
+  cursor: pointer; 
+}
+
+.contact-right img {
+  max-width: 550px; 
+  max-height: 450px;
 }
 
 /* Media query for larger screens */
