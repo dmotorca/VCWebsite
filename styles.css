@@ -31,9 +31,12 @@ body {
 .about_body,
 .contact_row,
 .contact_body {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Align text in a column */
+  color: white;
 }
 
 .about_p,
@@ -41,7 +44,7 @@ body {
 .contact_p {
   font-size: x-large;
   padding-top: 300px;
-  max-width: 1500px;
+  max-width: 500px;
   word-wrap: break-word;
   text-align: center;
   color: white;
