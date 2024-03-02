@@ -27,10 +27,63 @@ body {
   z-index: 999; /* Ensure navbar is above other content */
 }
 
+/*.contact_body and .about_body */
+.about_body,
+.contact_row,
+.contact_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_p,
+.contact_row,
+.contact_p {
+  font-size: x-large;
+  padding-top: 300px;
+  max-width: 1500px;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
+}
+.contact_row {
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows, first for text, second for icons */
+  grid-gap: 8px; /* Gap between the rows */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_text {
+  font-size: x-large;
+  color: white;
+  text-align: center;
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_icons img {
+  height: 4vh;
+  width: auto;
+}
+
+#instagram,
+#linkedIn,
+#tikTok {
+  height: 4vh;
+  width: auto;
+  padding: 2px;
+}
 #logo {
   height: 4vh;
   width: auto;
 }
+
+/*.contact_body and .about_body */
 
 .navbar-item a {
   color: white;
