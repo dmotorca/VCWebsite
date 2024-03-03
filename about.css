@@ -1,7 +1,5 @@
 body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  background: #d9d9d9;
+  background: #3050b0;
 }
 
 .navbar {
@@ -16,12 +14,17 @@ body {
   z-index: 999; /* Ensure navbar is above other content */
 }
 .navbar-item a {
-  color: black;
+  color: white;
   font-weight: 500;
   font-size: 10px; /* Adjust font size as needed */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none; /* Remove underline */
 }
+
+#middle {
+  font-size: larger;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -43,13 +46,14 @@ body {
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   padding: 80px;
-  color: black;
+  color: white;
   text-align: center;
   font-family: 'Comfortaa', sans-serif;
 }
 
 .about_p {
-  width: 85vw;
+  width: 65vw;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,12 +63,13 @@ body {
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     padding: 80px;
-    color: black;
+    color: white;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
   }
   .about_p {
-    width: 800px;
+    width: 50vh;
     text-align: center;
+    text-wrap: nowrap;
   }
 }

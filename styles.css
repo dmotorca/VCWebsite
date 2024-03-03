@@ -5,7 +5,7 @@ body {
   background: #3050b0;
 }
 
-/********** Navbar **********/ 
+/********** Navbar **********/
 .navbar {
   position: fixed; /* Make the navbar sticky */
   top: 0;
@@ -44,6 +44,10 @@ body {
   color: white;
 }
 
+#middle {
+  font-size: larger;
+}
+
 /********** About 2nd?? **********/
 /* This is a different version
 .about_body {
@@ -60,7 +64,7 @@ body {
   text-align: center;
   color: white;
 }
-*/ 
+*/
 
 /* 
 Double check 
@@ -89,7 +93,7 @@ Double check
   width: auto;
 }
 
-*/ 
+*/
 
 /********** Logos **********/
 #instagram,
@@ -105,7 +109,7 @@ Double check
   width: auto;
 }
 
-/********** Screens **********/ 
+/********** Screens **********/
 .screen {
   height: 100vh;
   position: relative;
@@ -154,7 +158,8 @@ Double check
 .screen11,
 .screen13,
 .screen15,
-.screen16 {
+.screen16,
+.screen19 {
   height: 100vh; /* Set a percentage height for each image */
 }
 
@@ -182,8 +187,10 @@ Double check
   background: white;
 }
 
+.screen4 img,
 .screen7 img,
 .screen10 img,
+.screen14 img,
 .screen16 img {
   height: 50vh;
   width: 47vw;
