@@ -1,20 +1,11 @@
+/********** Body **********/
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   background: #3050b0;
 }
 
-.screen {
-  height: 100vh;
-  position: relative;
-  z-index: 1; /* Ensure all screens are initially visible */
-  top: 0; /* Start each screen at the top of the viewport */
-  transition: z-index 0.5s; /* Add a smooth transition effect */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-}
-
+/********** Navbar **********/ 
 .navbar {
   position: fixed; /* Make the navbar sticky */
   top: 0;
@@ -27,10 +18,15 @@ body {
   z-index: 999; /* Ensure navbar is above other content */
 }
 
-/*.contact_body and .about_body */
-.about_body,
-.contact_row,
-.contact_body {
+.navbar-item a {
+  color: white;
+  font-weight: 500;
+  font-size: 10px; /* Adjust font size as needed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none; /* Remove underline */
+}
+/********** About **********/
+.about_body {
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -39,9 +35,7 @@ body {
   color: white;
 }
 
-.about_p,
-.contact_row,
-.contact_p {
+.about_p {
   font-size: x-large;
   padding-top: 300px;
   max-width: 500px;
@@ -49,10 +43,31 @@ body {
   text-align: center;
   color: white;
 }
+
+/********** About 2nd?? **********/
+/* This is a different version
+.about_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_p {
+  font-size: x-large;
+  padding-top: 300px;
+  max-width: 1500px;
+  word-wrap: break-word;
+  text-align: center;
+  color: white;
+}
+*/ 
+
+/* 
+Double check 
 .contact_row {
   display: grid;
-  grid-template-rows: auto auto; /* Two rows, first for text, second for icons */
-  grid-gap: 8px; /* Gap between the rows */
+  grid-template-rows: auto auto;
+  grid-gap: 8px; 
   justify-content: center;
   align-items: center;
 }
@@ -74,6 +89,9 @@ body {
   width: auto;
 }
 
+*/ 
+
+/********** Logos **********/
 #instagram,
 #linkedIn,
 #tikTok {
@@ -81,19 +99,22 @@ body {
   width: auto;
   padding: 2px;
 }
+
 #logo {
   height: 4vh;
   width: auto;
 }
 
-/*.contact_body and .about_body */
-
-.navbar-item a {
-  color: white;
-  font-weight: 500;
-  font-size: 10px; /* Adjust font size as needed */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: none; /* Remove underline */
+/********** Screens **********/ 
+.screen {
+  height: 100vh;
+  position: relative;
+  z-index: 1; /* Ensure all screens are initially visible */
+  top: 0; /* Start each screen at the top of the viewport */
+  transition: z-index 0.5s; /* Add a smooth transition effect */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
 }
 
 .screen1 {
@@ -126,7 +147,6 @@ body {
   width: auto;
 }
 
-/* Combine same height screens */
 .screen2,
 .screen3,
 .screen6,
@@ -195,6 +215,7 @@ img {
   object-fit: cover; /* Ensure the image covers the entire viewport */
 }
 
+/********** Positions **********/
 .left {
   /* Align to the top left */
   position: absolute;
@@ -214,108 +235,7 @@ img {
   top: 20px;
 }
 
-/********** Contact and about **********/
-/* combine .contact_body and .about_body */
-.about_body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.about_p {
-  font-size: x-large;
-  padding-top: 300px;
-  max-width: 1500px;
-  word-wrap: break-word;
-  text-align: center;
-  color: white;
-}
-
-
-/********** Focus solely on the contact **********/
-/* Centering the form container */
-.contact_body {
-  box-sizing: border-box;
-  font-family: 'Outfit';
-  background: linear-gradient(#3050b0, white)
-}
-.contact-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-}
-
-.contact-left {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px; 
-}
-
-.contact-left-title h2 {
-  font-weight: 600; 
-  color: white; 
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-.contact-left-title hr {
-  border: none; 
-  width: 120px; 
-  height: 5px; 
-  background-color: white; 
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.contact-inputs {
-  width: 400px; 
-  height: 50px; 
-  border: none;
-  outline: none;
-  padding-left: 25px;
-  font-weight: 500px;
-  color: #3050b0;
-  border-radius: 50px;
-}
-
-.contact-left textarea {
-  height: 140px; 
-  padding-top: 15px;
-  border-radius: 25px;
-}
-
-.contact-input:focus {
-  border: 2px solid black; 
-}
-
-.contact-input::placeholder {
-  color: #3050b0;
-
-}
-
-.contact-left button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px; 
-  font-size: 15px;
-  color: white; 
-  gap: 10px;
-  border: none; 
-  border-radius: 50px;
-  background: linear-gradient(200deg, white, #3050b0 );
-  cursor: pointer; 
-}
-
-.contact-right img {
-  max-width: 550px; 
-  max-height: 450px;
-}
-
-/* Media query for larger screens */
+/********** Media query for larger screens **********/
 @media screen and (min-width: 768px) {
   .screen1 img,
   .screen8 img,
