@@ -1,7 +1,12 @@
 body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   background: #3050b0;
 }
-
+.sticky {
+  position: sticky;
+  top: 0;
+}
 .navbar {
   position: fixed; /* Make the navbar sticky */
   top: 0;
@@ -29,10 +34,6 @@ body {
   position: sticky;
   top: 0;
 }
-#logo {
-  height: 4vh;
-  width: auto;
-}
 
 #about_headshot {
   height: 30vh;
@@ -46,13 +47,12 @@ body {
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   padding: 80px;
-  color: white;
-  text-align: center;
   font-family: 'Comfortaa', sans-serif;
+  color: white;
 }
-
 .about_p {
-  width: 65vw;
+  font-size: 12px;
+  width: 60vw;
   text-align: center;
 }
 
