@@ -46,6 +46,7 @@ body {
   flex-direction: column; /* Align items in a column */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
+
   padding: 80px;
   font-family: 'Comfortaa', sans-serif;
   color: white;
@@ -56,6 +57,24 @@ body {
   text-align: center;
 }
 
+.about-logos {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-logos img {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  width: auto;
+}
+#email-link {
+  padding-top: 10%;
+  font-size: x-small;
+  text-decoration: none;
+  color: white;
+}
 @media screen and (min-width: 768px) {
   .about_div {
     display: flex;
