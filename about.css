@@ -3,10 +3,7 @@ body {
   padding: 0; /* Remove default padding */
   background: #3050b0;
 }
-.sticky {
-  position: sticky;
-  top: 0;
-}
+
 .navbar {
   position: fixed; /* Make the navbar sticky */
   top: 0;
@@ -36,6 +33,7 @@ body {
 }
 
 #about_headshot {
+  padding: 15%;
   height: 30vh;
   width: auto;
   padding-bottom: 20px;
@@ -46,14 +44,12 @@ body {
   flex-direction: column; /* Align items in a column */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-
-  padding: 80px;
   font-family: 'Comfortaa', sans-serif;
   color: white;
 }
 .about_p {
   font-size: 12px;
-  width: 60vw;
+  width: 70vw;
   text-align: center;
 }
 
@@ -70,25 +66,27 @@ body {
   width: auto;
 }
 #email-link {
-  padding-top: 10%;
   font-size: x-small;
   text-decoration: none;
   color: white;
 }
+
 @media screen and (min-width: 768px) {
-  .about_div {
-    display: flex;
-    flex-direction: column; /* Align items in a column */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    padding: 80px;
-    color: white;
-    text-align: center;
-    font-family: 'Comfortaa', sans-serif;
+  #about_headshot {
+    padding-top: 5%;
+    height: 40vh;
+    width: auto;
   }
   .about_p {
-    width: 50vh;
+    font-size: medium;
+    width: 60vw;
     text-align: center;
-    text-wrap: nowrap;
+  }
+  .about-logos img {
+    display: flex;
+    flex-direction: row;
+
+    height: 5vh;
+    width: auto;
   }
 }
