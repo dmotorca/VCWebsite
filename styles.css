@@ -96,19 +96,6 @@ Double check
 */
 
 /********** Logos **********/
-#instagram,
-#linkedIn,
-#tikTok {
-  height: 4vh;
-  width: auto;
-  padding: 2px;
-}
-
-#logo {
-  height: 4vh;
-  width: auto;
-}
-
 /********** Screens **********/
 .screen {
   height: 100vh;

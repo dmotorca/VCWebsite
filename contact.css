@@ -17,6 +17,11 @@
   justify-content: space-evenly;
 }
 
+.contact-form label {
+  display: none;
+  /* Add other styles to visually hide the labels */
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
