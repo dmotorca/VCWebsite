@@ -50,59 +50,12 @@ body {
 .middle {
   padding-top: 2%;
 }
-/********** About 2nd?? **********/
-/* This is a different version
-.about_body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about_p {
-  font-size: x-large;
-  padding-top: 300px;
-  max-width: 1500px;
-  word-wrap: break-word;
-  text-align: center;
-  color: white;
-}
-*/
-
-/* 
-Double check 
-.contact_row {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-gap: 8px; 
-  justify-content: center;
-  align-items: center;
-}
-
-.contact_text {
-  font-size: x-large;
-  color: white;
-  text-align: center;
-}
-
-.contact_icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact_icons img {
-  height: 4vh;
-  width: auto;
-}
-
-*/
 
 /********** Logos **********/
 /********** Screens **********/
 .screen {
   height: 100vh;
   position: relative;
-  z-index: 1; /* Ensure all screens are initially visible */
   top: 0; /* Start each screen at the top of the viewport */
   transition: z-index 0.5s; /* Add a smooth transition effect */
   display: flex; /* Use flexbox */
@@ -212,88 +165,59 @@ img {
 }
 
 /********** Positions **********/
-.left {
-  /* Align to the top left */
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.middle {
-  /* Center horizontally */
-  margin: 0 auto;
-}
-
-.right {
-  /* Align to the top right */
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
 
 /********** Media query for larger screens **********/
+
 @media screen and (min-width: 768px) {
   .screen1 img,
-  .screen8 img,
-  .screen12 img {
-    height: 600px; /* Set a fixed height for each image on desktop */
-    width: auto; /* Allow the width to adjust based on the height */
+  .screen12 img,
+  .screen8 img {
+    height: 600px;
+    width: auto;
   }
-
   .screen2 img {
-    /*Needs to be changed ** Octavia Img Long */
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
   }
-
   .screen3 img {
-    height: 100vh; /* Set a fixed height for each image on desktop */
+    height: 100vh;
   }
-
+  .screen16 img,
   .screen4 img,
-  .screen7 img,
-  .screen16 img {
+  .screen7 img {
     margin-right: 10px;
     margin-left: 10px;
     height: 75vh;
   }
-
   .screen10 img {
     margin-right: 10px;
     margin-left: 10px;
     height: 75vh;
     width: 30vw;
   }
-
   .screen11 img {
-    /*Needs to be changed ** Octavia Img Long */
     height: 80vh;
     width: 61vw;
   }
-
   .screen13 img {
     height: 80vh;
     width: 34.55vw;
   }
-
   .screen14 img {
     margin-right: 10px;
     margin-left: 10px;
     height: 90vh;
     width: 30vw;
   }
-
   .screen15 img {
     height: 80vh;
     width: auto;
   }
-
   .screen17 img {
-    height: auto;
+    height: 100vh;
   }
-
   .screen18 img {
-    height: auto;
+    height: 100vh;
   }
 }
