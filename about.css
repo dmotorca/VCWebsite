@@ -24,12 +24,10 @@ body {
 }
 
 #middle {
-  font-size: larger;
+  font-size: medium;
 }
-
-.sticky {
-  position: sticky;
-  top: 0;
+.middle {
+  padding-top: 2%;
 }
 
 #about_headshot {
