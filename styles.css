@@ -45,9 +45,11 @@ body {
 }
 
 #middle {
-  font-size: larger;
+  font-size: medium;
 }
-
+.middle {
+  padding-top: 2%;
+}
 /********** About 2nd?? **********/
 /* This is a different version
 .about_body {
