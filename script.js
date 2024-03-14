@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   // -- Below is the 1st set of images that are rotating
   const images_1 = [
-    './images/rotating_1.png',
+    './images/rotating_1.png', //These are file paths to a specific photo
     './images/rotating_2.png',
     './images/rotating_3.png',
   ];
