@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DANNYSORIANO</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PXRRKGYS8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-5PXRRKGYS8');
+    </script>
   </head>
-
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-5PXRRKGYS8"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-5PXRRKGYS8');
-  </script>
 
   <body>
     <div class="navbar">
@@ -36,160 +30,107 @@
     </div>
 
     <div class="container">
+
+      <!-- TYPE 1: Rotating — blue background -->
       <div class="screen screen1">
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-        <img
-          src="./images/rotating_1.png"
-          id="image1"
-          alt="rotating images of various people"
-        />
-        <!-- Rotating Pictures IMAGE TYPE 1-->
+        <img src="./images/blue_rotating_1.png" id="image1" alt="rotating images of various people" />
       </div>
 
-      <!-- Regular Pictures IMAGE TYPE 3-->
+      <!-- TYPE 3: Single full images -->
       <div class="screen screen2">
-        <img src="./images/1.png" id="image2" alt="image of a person" />
+        <img src="./images/1.png" id="image2" alt="image of a person" loading="lazy" />
       </div>
       <div class="screen screen3">
-        <img src="./images/2.png" id="image3" alt="image of a person" />
+        <img src="./images/2.png" id="image3" alt="image of a person" loading="lazy" />
       </div>
       <div class="screen screen3">
-        <img src="./images/new_1.png" id="new1" alt="image of a person" />
+        <img src="./images/new_1.png" id="new1" alt="image of a person" loading="lazy" />
       </div>
-      <!-- Regular Pictures IMAGE TYPE 3-->
 
+      <!-- TYPE 2: Side by side — black background -->
       <div class="screen screen4">
-        <!-- Side by Side Pictures IMAGE TYPE 2-->
-        <img
-          src="./images/black_bg_1.png"
-          id="image4"
-          alt="image of a person"
-        />
-        <img
-          src="./images/black_bg_2.png"
-          id="image5"
-          alt="image of a person"
-        />
-        <!-- Side by Side Pictures IMAGE TYPE 2-->
+        <img src="./images/black_bg_1.png" id="image4" alt="image of a person" loading="lazy" />
+        <img src="./images/black_bg_2.png" id="image5" alt="image of a person" loading="lazy" />
       </div>
 
-      <!-- Regular Pictures IMAGE TYPE 3-->
+      <!-- TYPE 3: Single full images -->
       <div class="screen screen5">
-        <img src="./images/3.png" id="image6" alt="image of a person" />
+        <img src="./images/3.png" id="image6" alt="image of a person" loading="lazy" />
       </div>
       <div class="screen screen6">
-        <img src="./images/4.png" id="image7" alt="image of a person" />
+        <img src="./images/4.png" id="image7" alt="image of a person" loading="lazy" />
+      </div>
+      <div class="screen screen6">
+        <!-- Fixed: was "screen 6" with a space -->
+        <img src="./images/new_2.png" id="new_2" alt="image of a person" loading="lazy" />
       </div>
 
-      <div class="screen screen 6">
-        <img src="./images/new_2.png" alt="image of a person" id="new_2" />
-      </div>
-      <!-- Regular Pictures IMAGE TYPE 3-->
-
+      <!-- TYPE 2: Side by side — white background -->
       <div class="screen screen7">
-        <!-- Side by Side Pictures IMAGE TYPE 2-->
-        <img
-          src="./images/white_bg_1.png"
-          id="image8"
-          alt="image of a person"
-        />
-        <img
-          src="./images/white_bg_2.png"
-          id="image9"
-          alt="image of a person"
-        />
-        <!-- Side by Side Pictures IMAGE TYPE 2-->
-      </div>
-      <div class="screen screen8">
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-        <img
-          src="./images/rotating_4.png"
-          id="image10"
-          alt="image of a person"
-        />
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-      </div>
-      <div class="screen screen9">
-        <img src="./images/5.png" id="image11" alt="image of a person" />
-      </div>
-      <div class="screen screen10">
-        <!-- Side by Side Pictures (white) IMAGE TYPE 2-->
-        <img
-          src="./images/white_bg_3.png"
-          id="image12"
-          alt="image of a person"
-        />
-        <img
-          src="./images/white_bg_4.png"
-          id="image13"
-          alt="image of a person"
-        />
-        <!-- Side by Side Pictures (white) IMAGE TYPE 2-->
-      </div>
-      <div class="screen screen11">
-        <img src="./images/6.png" id="image14" alt="image of a person" />
-      </div>
-      <div class="screen screen12">
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-        <img
-          src="./images/white_rotating_1.png"
-          id="image15"
-          alt="image of a person"
-        />
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-      </div>
-      <div class="screen screen13">
-        <img src="./images/7.png" id="image16" alt="image of a person" />
-      </div>
-      <div class="screen screen14">
-        <!-- Side by Side Pictures (black) IMAGE TYPE 2-->
-        <img
-          src="./images/black_bg_3.png"
-          id="image17"
-          alt="image of a person"
-        />
-        <img
-          src="./images/black_bg_4.png"
-          id="image18"
-          alt="image of a person"
-        />
-        <!-- Side by Side Pictures (black) IMAGE TYPE 2-->
-      </div>
-      <div class="screen screen15">
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-        <img
-          src="./images/white_rotating_tall_1.png"
-          id="image19"
-          alt="image of a person"
-        />
-        <!-- Rotating Pictures IMAGE TYPE 1-->
-      </div>
-      <div class="screen screen16">
-        <!-- Side by Side Pictures (white) IMAGE TYPE 2-->
-        <img
-          src="./images/white_bg_5.png"
-          id="image20"
-          alt="image of a person"
-        />
-        <img
-          src="./images/white_bg_6.png"
-          id="image21"
-          alt="image of a person"
-        />
-        <!-- Side by Side Pictures (white) IMAGE TYPE 2-->
+        <img src="./images/white_bg_1.png" id="image8" alt="image of a person" loading="lazy" />
+        <img src="./images/white_bg_2.png" id="image9" alt="image of a person" loading="lazy" />
       </div>
 
-      <!-- Regular Pictures IMAGE TYPE 3-->
+      <!-- TYPE 1: Rotating — blue background -->
+      <div class="screen screen8">
+        <img src="./images/rotating_4.png" id="image10" alt="image of a person" />
+      </div>
+
+      <!-- TYPE 3: Single full image -->
+      <div class="screen screen9">
+        <img src="./images/5.png" id="image11" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 2: Side by side — white background -->
+      <div class="screen screen10">
+        <img src="./images/white_bg_3.png" id="image12" alt="image of a person" loading="lazy" />
+        <img src="./images/white_bg_4.png" id="image13" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 3: Single full image -->
+      <div class="screen screen11">
+        <img src="./images/6.png" id="image14" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 1: Rotating — white background -->
+      <div class="screen screen12">
+        <img src="./images/white_rotating_1.png" id="image15" alt="image of a person" />
+      </div>
+
+      <!-- TYPE 3: Single full image -->
+      <div class="screen screen13">
+        <img src="./images/7.png" id="image16" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 2: Side by side — black background -->
+      <div class="screen screen14">
+        <img src="./images/black_bg_3.png" id="image17" alt="image of a person" loading="lazy" />
+        <img src="./images/black_bg_4.png" id="image18" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 1: Rotating — white background, tall -->
+      <div class="screen screen15">
+        <img src="./images/white_rotating_tall_1.png" id="image19" alt="image of a person" />
+      </div>
+
+      <!-- TYPE 2: Side by side — white background -->
+      <div class="screen screen16">
+        <img src="./images/white_bg_5.png" id="image20" alt="image of a person" loading="lazy" />
+        <img src="./images/white_bg_6.png" id="image21" alt="image of a person" loading="lazy" />
+      </div>
+
+      <!-- TYPE 3: Single full images -->
       <div class="screen screen17">
-        <img src="./images/8.png" id="image22" alt="image of a person" />
+        <img src="./images/8.png" id="image22" alt="image of a person" loading="lazy" />
       </div>
       <div class="screen screen18">
-        <img src="./images/9.png" id="image23" alt="image of a person" />
+        <!-- Fixed: was two divs both using screen18 -->
+        <img src="./images/9.png" id="image23" alt="image of a person" loading="lazy" />
       </div>
-      <div class="screen screen18">
-        <img src="./images/10.png" id="image24" alt="image of a person" />
+      <div class="screen screen19">
+        <img src="./images/10.png" id="image24" alt="image of a person" loading="lazy" />
       </div>
-      <!-- Regular Pictures IMAGE TYPE 3-->
+
     </div>
     <script src="script.js"></script>
   </body>
