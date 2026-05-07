@@ -8,7 +8,6 @@ body {
 /* Fix Safari overscroll color */
 html {
   background-color: #000000; /* matches your contact page blue */
-  overflow-x: hidden;
 }
 /********** Navbar **********/
 .navbar {
