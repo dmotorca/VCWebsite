@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── Rotating images ────────────────────────────────────────────
   const rotators = [
+    /*
     {
       id: 'image1',
       images: [
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         './images/blue_rotating_3.png',
       ],
     },
+    */
     {
       id: 'image10',
       images: [

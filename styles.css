@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-item a {
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 10px; /* Adjust font size as needed */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -74,8 +74,8 @@ body {
 .screen1 img,
 .screen8 img,
 .screen12 img {
-  height: 450px; /* Set a fixed height for each image */
-  width: 300px; /* Set a fixed width for each image */
+  height: 100vh; /* Set a fixed height for each image */
+  width: 100vw; /* Set a fixed width for each image */
   object-fit: cover; /* Ensure the image covers the entire space */
 }
 
