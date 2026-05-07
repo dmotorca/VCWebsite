@@ -25,16 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── Rotating images ────────────────────────────────────────────
   const rotators = [
-    /*
     {
       id: 'image1',
       images: [
-        './images/blue_rotating_1.png',
-        './images/blue_rotating_2.png',
-        './images/blue_rotating_3.png',
+        './images/Scroll_1.png',
+        './images/Scroll_2.png',
+        './images/Scroll_3.png',
+        './images/Scroll_4.png',
       ],
     },
-    */
     {
       id: 'image10',
       images: [
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     rotate(); // set initial image immediately
-    setInterval(rotate, 1500);
+    setInterval(rotate, 1750);
   });
 
 });

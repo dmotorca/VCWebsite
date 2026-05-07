@@ -5,6 +5,11 @@ body {
   background-color: black;
 }
 
+/* Fix Safari overscroll color */
+html {
+  background-color: #000000; /* matches your contact page blue */
+  overflow-x: hidden;
+}
 /********** Navbar **********/
 .navbar {
   position: fixed; /* Make the navbar sticky */
@@ -74,8 +79,8 @@ body {
 .screen1 img,
 .screen8 img,
 .screen12 img {
-  height: 100vh; /* Set a fixed height for each image */
-  width: 100vw; /* Set a fixed width for each image */
+  height: 85vh; /* Set a fixed height for each image */
+  width: 75vw; /* Set a fixed width for each image */
   object-fit: cover; /* Ensure the image covers the entire space */
 }
 
@@ -107,15 +112,10 @@ body {
 
 .screen4,
 .screen14 {
-  background: #000;
+  background: #FEE773
 }
 
-.screen4 img,
-.screen14 img {
-  height: 30vh;
-  width: 40vw;
-  margin: 5px;
-}
+
 
 .screen5 img {
   height: 100vh;
@@ -152,6 +152,7 @@ body {
   height: 75vh;
   width: 95vw;
 }
+
 
 .sticky {
   position: sticky;
